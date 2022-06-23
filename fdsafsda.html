@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a.class1{
+            background:url(L1UuhNj8T18.jpg);
+            display: block;
+            width: 250px;
+            height: 250px;
+        }
+        a.class1:hover{
+            background: url(zxcv.jpg);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="class1"></a>
+    <br>
+    <img src="" id="img1">
+    </a>
+    <script>
+        var images = new Array();
+        var a = 0;
+        
+        images[0]='asdf.jpg';
+        images[1]='zxcv.jpg';
+        images[2]='qwer.jpg';
+
+        function w(){
+            document.getElementById("img1").src = images[a]
+            a++;
+            if (a == 3){
+                a=0;
+            }
+            setTimeout("w()",2000);
+        }
+        w();
+    </script>
+
+</body>
+</html>
